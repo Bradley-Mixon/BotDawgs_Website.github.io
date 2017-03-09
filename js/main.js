@@ -1,3 +1,3 @@
 $( "#button" ).click(function() {
-  ("#button")css.("background-color", "blue")
+  ("#button")css.("background-color", "blue");
 });
