@@ -1,1 +1,1 @@
-This is a personal test website!
+Thw website for the JBHS robotics team!
