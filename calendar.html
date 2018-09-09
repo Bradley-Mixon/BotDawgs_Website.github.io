@@ -1,45 +1,130 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <title>Important Links</title>
-  <meta charset="utf-8">
-  <!-- Get Material Design from a CDN. Check for a more recent version. -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">  <!-- Site's designed for mobile -->
-  <!-- Site's designed for mobile -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<!DOCTYPE html>
+<html>
+<title>Bowie BotDawgs</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <style>
-    body {
-      background-color: #a3a8af;
-    }
-  </style>
-</head>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
 <body>
- 
-<nav class="red darken-4" role="navigation">
-  <div class="nav-wrapper container left">
-    <ul class="right">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="calendar.html">Calendar</a></li>
-      <li><a href="links.html">Links</a></li>
-    </ul>
-    <a href="index.html" class="brand-logo left">Bowie Robotics</a>  
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Bowie<br>BotDawgs</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Us</a>
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Our Team</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
   </div>
 </nav>
- 
-  <!-- Obtain latest version of jquery from CDN -->
-  <script src="http://code.jquery.com/jquery-latest.js"></script>
-  <!-- jQuery must be imported before materialize -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
 
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span> Bowie BotDawgs</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Bowie BotDawgs</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>The official robotics program of JBHS</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
   
- <!-- Content Below --> 
+
+  <!-- About Us -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>About Us</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>THE BOWIE BOTDAWGS IS THE FIRST ROBOTICS CLUB AT JBHS</p>
+    <p>Most people know of these words by inspirational leader Mahatma Gandhi "Be the change you want to see in the world." But, for the members of the Bowie Botdawg Robotics Club, these are far more than just words, they're a principle that can be put into action. The Bowie Botdawgs Robotics Club was founded in 2017 by the efforts of a small but dedicated group of students who recognized that many Bowie students possess the talent, desire and dedication towards improving the world through robotics and technology.</p>
+  </div>
   
-  <h5>Below is the link to the Google Calendar for Bowie Roboitcs. It is updated regularly with meeting and event details.</h5>
-  <h5> </h5>
-   <h5> 
-      <li><a href="https://calendar.google.com/calendar/b/2?cid=Ym93aWVib3RkYXdnc0BnbWFpbC5jb20">Google Calendar</a></li>
-      
-   </h5>
-  </body>
+  <!-- Our Team -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Our Team</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>The BotDawgs:</p>
+    <img src= "https://ibb.co/douQUp" height="400" width="550" align="middle">
+    <p>Top Row: Conner Petru, Graydon Carlton, Kush Patel, Matthew Wash, Nick Bastos, Ishaan Mehta, Abhinav Deepak<br>
+Middle Row: Connor Stevens, Shubh Dungar, Christian McClure, Brady Wright, Joseph Byron, Nithin Chidambara<br>
+Bottom Row: Ethan Bao, Bennett Niemeyer, Bradley Mixon, Chris Hansen, Daniel Yllana, Cristian Garcia Pecina<br>
+    </p>
+    
+  </div>
+
+
+  <!-- Calendar -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Calendar</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Below is the link to the Google Calendar for Bowie Roboitcs. It is updated regularly with meeting and event details.</p>
+	<a href="https://calendar.google.com/calendar/b/2?cid=Ym93aWVib3RkYXdnc0BnbWFpbC5jb20">Google Calendar</a>  
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Questions, concerns, or just like to get in touch? Let us know!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
 </html>
