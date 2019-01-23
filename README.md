@@ -1,1 +1,1 @@
-Thw website for the JBHS robotics team!
+The website for the JBHS robotics team!
