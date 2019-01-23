@@ -1,0 +1,1 @@
+itemap: http://bowie-robotics.club/sitemap_location.xml
